@@ -12,7 +12,7 @@ public class SelectFromTable {
         /*String query1= "insert into course(course_id,course_name,course_duration,course_fees)"+
           "values(20, 'framework', '60hours', '20thousand');";*/
         String query2 = "select * from course;";
-            //int t= statement.executeUpdate(query1);
+           // int t= statement.executeUpdate(query1);
         ResultSet resultSet= statement.executeQuery(query2);
         while(resultSet.next()){
             System.out.println(resultSet.getInt("course_id")+"\t"+
